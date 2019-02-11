@@ -1,0 +1,288 @@
+* {
+    font-size: 1.2rem;
+}
+
+body {
+    background: #D3D3D3;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+tr {
+    border-bottom: 0.5px solid #D3D3D3;
+}
+
+p {
+    background: #969696;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.6;
+    padding: 15px;
+    text-align: justify;
+}
+
+label {
+    font-size: 0.75rem;
+}
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+#checkmark_icon {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#company-header {
+    color: #EB1D25;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+#cvc_form {
+    width: 40%;
+}
+
+#id_number {
+    border: solid #2DD096;
+    border-radius: 0px 5px 5px 0px;
+    height: 2.5rem;
+}
+
+#nav-header {
+    position: sticky;
+    
+}
+
+#special_header {
+    background: #fff;
+    color: #404040;
+    width: 70%;
+}
+
+#special_label {
+    background: #2DD096;
+    border-radius: 5px 0px 0px 5px;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 20%;
+    padding: .5rem .75rem;
+}
+
+.tab {
+    margin-bottom: 4rem;
+}
+
+#tab-1-next {
+    width: 100%;
+}
+
+a:hover {
+    opacity: 0.5;
+    color: #fff;
+}
+
+.active {
+    background: #d3d3d3;
+    color: #404040 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #2DD096;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    box-shadow: 1px 1px 5px #6C6C6C;
+    width: 60%;
+}
+
+.card-header {
+    background: #404040;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.control {
+    background: #2DD096;
+    border-radius: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    opacity: 1 !important;
+
+}
+
+.control-next {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    height: 100%;
+    width: 50%;
+
+    position: absolute;
+    right: 0;
+}
+
+.control-next:hover {
+    background: #646E79;
+}
+
+.control-prev {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    height: 100%;
+    width: 50%;
+
+    position: absolute;
+    left: 0;
+}
+
+.control-prev:hover {
+    background: #646E79;
+}
+
+.container {
+    background-color: #EB1D25;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.container-fluid {
+    background-color: #f44242;
+    height: 4rem;
+}
+
+.custom-select {
+    background: #D3D3D3;
+    border: none;
+    text-align: center;
+}
+
+.form-control {
+    background: #EFEFEF;
+    border: none;
+    border-radius: 3px;
+}
+
+.form-control::placeholder {
+    color: #5E5E5E;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group.col-md-6 {
+    width: 60%;
+}
+
+.header {
+    width: 100%;
+}
+
+.input-group {
+    height: auto
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav.card-body {
+    margin-top: 15%;
+}
+
+.nav-item {
+    height: 100%;
+    width: 25%;
+    padding-top: 1rem; 
+}
+
+.nav-item:hover {
+    background-color: #646E79;  
+
+}
+
+.nav-header.container-fluid {
+    background-color: #fff;
+    height: 4rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    height: 100%;
+}
+
+.tab {
+    display: none;
+}
+
+.table {
+    border: none;
+    margin: auto;
+    width: 90%;
+}
+
+.table td, .table th {
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+    #special_nav {
+        padding-top: 0 !important;
+    }
+    
+    #special_label {
+        width: 30%;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+    * {
+        font-size: 1rem;
+    }
+
+
+
+    .card {
+        width: 100%;
+    }
+
+    .container-fluid {
+        font-size: 18px;
+    }
+
+    .nav-item.item-padd {
+        padding-top: 0.75rem;
+    }
+}

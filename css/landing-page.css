@@ -1,0 +1,260 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.0 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://previews.123rf.com/images/antonioguillem/antonioguillem1505/antonioguillem150500002/40317243-happy-girl-texting-on-a-smart-phone-in-a-train-station-while-is-waiting.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+}
+
+.card-body {
+  height: 100%;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+body
+{
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.bg-gray
+{
+	background-color: #e6e9f0;
+}
+
+.sec2 
+{
+	position: relative;
+	background-color: #343a40;
+	background: url("../img/bg-image01.jpg") no-repeat center center;
+	background-size: cover;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.sec3 
+{
+	position: relative;
+	background-color: #343a40;
+	background: url("../img/bg-image03.jpg") no-repeat center center;
+	background-size: cover;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.sec4 
+{
+	position: relative;
+	background-color: #343a40;
+	background: url("../img/bg-image02.jpg") no-repeat center center;
+	background-size: cover;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.sec5 
+{
+	position: relative;
+	background-color: #343a40;
+	background: url("../img/bg-image04.jpg") no-repeat center center;
+	background-size: cover;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.nounderline:link {
+  text-decoration: none;
+  color: #3a8cce;
+}
+
+.nounderline:hover {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+.link1:link {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+
+.content-table2 .list {
+    width: 100% !important;
+    margin: 0px;
+}
+
+.content-table2 .list .item {
+    width: 20%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px 0px 20px 2%;
+    font-weight: 600;
+    text-align: left;
+}
+.content-table2 .list .item img {
+    width: 35px;
+    display: inline-block;
+    font-size: 22px;
+    padding: 0px 10px 0px 0px;
+    font-weight: 600;
+}
+
+.download-bar{
+    background: #383E4F; /* Old browsers */
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+    color: #ffffff;
+}
+
+.download-bar h4 {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.app-logo {
+    display: inline-block;
+}
+.app-logo img {
+    width: 45px;
+    margin: 10px 0 10px 10px;
+}
+.download_item {
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+}
+
+.download_item img{
+    width: 150px;
+}
+
+@media only screen and (max-width: 600px){
+  .content-table2 .list .item img {
+      padding-right: 10px;
+      width: 30px;
+      display: inline-block;    
+  }
+
+  .content-table2 .list .item {
+      width: 100%;
+      padding-left: 42px;
+      font-size: 25px;
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instant Top-Up</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Stylesheet -->
+    <link href="css/top_up.css" rel="stylesheet">
+	
+</head>
+
+<body>
+    <div class="header">
+        <div class="p-2 nav-header container-fluid">
+            <h1 class="p-0" id="company-header"><span>FLEXI</span>ROAM</h1>
+        </div>
+        <div class="p-0 container-fluid">
+            <ul class="nav text-center">
+                <li id="tab-1" class="nav-item nav-link">
+                    Serial Number
+                </li>
+                <li id="tab-2" class="nav-item nav-link">
+                    Country
+                </li>
+                <li id="tab-3" class="nav-item nav-link">
+                    Package
+                </li>
+                <li id="tab-4" class="nav-item nav-link">
+                    Checkout
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <!-- tab 1 -->
+        <div class="tab tab-1">
+                <div class="card-body">
+                    <div class="my-3 mx-auto card">
+                        <div class="card-header">
+                            Enter Serial Number
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ConnectSIM Serial Number (SN) :</h5>
+                            <div class="card-text">
+                                <p>Please enter the last 7 digits in the following bar.</p>
+                            </div>
+                            <div class="my-4 input-group">
+                                <label id="special_label" class="m-0 px-3" for="SN_id">201901</label>
+                                <input id="id_number"class="form-control" type="number" placeholder="Enter here.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <input id="tab-1-next" class="control-next" type="submit" value="NEXT">
+                </div>
+        </div>
+
+        <!-- tab 2 -->
+        <div class="tab tab-2">
+            <div class="card-body">
+                <div class="my-3 mx-auto card">
+                    <div class="card-header">
+                        Select Country
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Select the country you are travelling to:</h5>
+                        <div class="my-4 input-group">
+                            <select name="country" id="country_dropdown" class="custom-select">
+                                    <option selected>Select the Country</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input id="tab-2-next" class="control-next" type="submit" value="NEXT">
+                <input id="tab-2-prev" class="control-prev" type="button" value="PREVIOUS">
+            </div>
+        </div>
+
+        <!-- tab 3 -->
+        <div class="tab tab-3">
+            <div class="card-body">
+                <div class="my-3 mx-auto card">
+                    <div class="card-header">
+                        Choose Plan
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Available Data Plan(s) for United Kingdom</h5>
+                        <div class="my-4 input-group">
+                            <select name="plan" id="plan_dropdown" class="custom-select">
+                                    <option selected>Select the right plan</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input id="tab-3-next" class="control-next" type="submit" value="NEXT">
+                <input id="tab-3-prev" class="control-prev" type="button" value="PREVIOUS">
+            </div>
+        </div>
+
+        <!-- tab 4 -->
+        <div class="tab tab-4">
+            <div class="card-body">
+                <div class="my-3 mx-auto card">
+                    <div class="card-header">
+                        Payments
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="card_number">Card Number</label>
+                                <input type="numeric" class="form-control" id="card_number" placeholder="Card Number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardholder_name">Cardholder Name</label>
+                                <input type="text" class="form-control" id="cardholder_name" placeholder="Cardholder Name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="expiry_date">Expiration Date</label>
+                                    <input type="date" class="form-control" id="expiry_date" placeholder="Expriation Date (MM/YY)" required>
+                                </div>
+                                <div id="cvc_form" class="form-group col-md-6">
+                                    <label for="cvc">CVC</label>
+                                    <input type="password" class="form-control" id="cvc" placeholder="***" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input id="tab-4-next" class="control-next" type="submit" value="NEXT">
+                <input id="tab-4-prev" class="control-prev" type="button" value="PREVIOUS">
+            </div>
+        </div>
+
+        <!-- tab 5 -->
+        <div class="tab tab-5">
+            <div class="card-body">
+                <div class="my-3 mx-auto card">
+                    <div class="card-header">
+                        Payment Successful
+                    </div>
+                    <div class="card-body">
+                        <div class="image">
+                            <img id="checkmark_icon" src="img/checkmark.jpg"/>
+                        </div>
+                        <h5 class="card-title text-center">Top Up Summary</h5>
+                        <table class="my-2 table">
+                            <tr>
+                                <th id="special_header" class="card-header">United Kingdom Local Plan Example 1</th>
+                                <td class="p-2 card-text text-right">USD $49.99</td>
+                            </tr>
+                            <tr>
+                                <th id="special_header" class="card-header">XX% Discount</th>
+                                <td class="p-2 card-text text-right">-USD $49.99</td>
+                            </tr>
+                            <tr>
+                                <th id="special_header" class="card-header">Amount Paid</th>
+                                <td class="p-2 card-text text-right">USD $49.99</td>
+                            </tr>
+                        </table>
+                        <div class="m-3">
+                            <label class="my-2" for="email_bar">Get your receipt & receipt additional 30% off discount for your next purchase.</label>
+                            <input type="text" class="my-2 form-control" aria-describedby="email_bar" placeholder="Enter your email here.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input class="control-next" type="submit" value="DONE" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/top_up.js"></script>
+</body>
