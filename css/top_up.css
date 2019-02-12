@@ -6,15 +6,6 @@ body {
     background: #D3D3D3;
 }
 
-span {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-tr {
-    border-bottom: 0.5px solid #D3D3D3;
-}
-
 p {
     background: #969696;
     border-radius: 5px;
@@ -29,8 +20,13 @@ label {
     font-size: 0.75rem;
 }
 
-#carouselExampleIndicators {
-    position: relative;
+span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+tr {
+    border-bottom: 0.5px solid #D3D3D3;
 }
 
 #checkmark_icon {
@@ -55,11 +51,6 @@ label {
     height: 2.5rem;
 }
 
-#nav-header {
-    position: sticky;
-    
-}
-
 #special_header {
     background: #fff;
     color: #404040;
@@ -77,31 +68,13 @@ label {
     padding: .5rem .75rem;
 }
 
-.tab {
-    margin-bottom: 4rem;
-}
-
 #tab-1-next {
     width: 100%;
-}
-
-a:hover {
-    opacity: 0.5;
-    color: #fff;
 }
 
 .active {
     background: #d3d3d3;
     color: #404040 !important;
-}
-
-.btn-primary {
-    color: #fff;
-    background: #2DD096;
-    border: none;
-    font-weight: 700;
-    font-size: 1rem;
-    width: 100%;
 }
 
 .card {
@@ -122,13 +95,13 @@ a:hover {
     border-radius: 0;
     width: 100%;
     height: 5rem;
+    
     position: fixed;
     bottom: 0;
     opacity: 1 !important;
-
 }
 
-.control-next {
+.control input {
     background: none;
     border: none;
     color: #fff;
@@ -141,32 +114,12 @@ a:hover {
     right: 0;
 }
 
-.control-next:hover {
+.control input:hover {
     background: #646E79;
 }
 
 .control-prev {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.75rem;
-    font-weight: 600;
-    height: 100%;
-    width: 50%;
-
-    position: absolute;
-    left: 0;
-}
-
-.control-prev:hover {
-    background: #646E79;
-}
-
-.container {
-    background-color: #EB1D25;
-    position: fixed;
-    z-index: 1000;
-
+    left: 0 !important;
 }
 
 .container-fluid {
@@ -202,10 +155,6 @@ a:hover {
     width: 100%;
 }
 
-.input-group {
-    height: auto
-}
-
 .nav {
     height: 100%;
 }
@@ -222,7 +171,6 @@ a:hover {
 
 .nav-item:hover {
     background-color: #646E79;  
-
 }
 
 .nav-header.container-fluid {
@@ -238,6 +186,7 @@ a:hover {
 
 .tab {
     display: none;
+    margin-bottom: 4rem;
 }
 
 .table {
@@ -252,8 +201,8 @@ a:hover {
 
 @media only screen and (max-width: 760px) {
 
-    #special_nav {
-        padding-top: 0 !important;
+    #tab-1 {
+        padding-top: 0.5rem !important;
     }
     
     #special_label {
@@ -272,17 +221,11 @@ a:hover {
         font-size: 1rem;
     }
 
-
-
     .card {
         width: 100%;
     }
 
     .container-fluid {
         font-size: 18px;
-    }
-
-    .nav-item.item-padd {
-        padding-top: 0.75rem;
     }
 }
