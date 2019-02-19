@@ -1241,11 +1241,11 @@ $actual_link = current($actual_link);
 
 	<!-- FAQ -->
 	<section class="pt-2 px-4" style="background-color: #fbfbfb">
-		<div class="faq_bar">
+		<div class="faq_bar" data-toggle="collapse" aria-expanded="false" aria-controls="collapse" href="#collapseFAQ">
 			<div class="title">
 				<h2 class="font-italic text-center">Frequently Asked Questions</h2>
 			</div>
-			<div class="bt-menu-trigger" data-toggle="collapse" aria-expanded="false" aria-controls="collapse" href="#collapseFAQ"><span></span></div>
+			<div class="bt-menu-trigger"><span></span></div>
 		</div>
 		<div id="collapseFAQ" class="mt-4 collapse" role="tabpanel">
 			<div class="row d-flex justify-content-center">
@@ -1513,12 +1513,12 @@ $actual_link = current($actual_link);
 
 
 <!-- Connect SIM topup starts -->
-<div class="ctopup-container"  data-toggle="modal" data-target="#topupcontainermodal">
+<div id="ctopup-container" class="ctopup-container"  data-toggle="modal" data-target="#topupcontainermodal">
 	<img src="img/topup-icon-web.png" class=""/>
 </div>
 
 <!-- Modal -->
-<div class="modal" id="topupcontainermodal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal" id="topupcontainermodal" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="padding-right: 0;">
 
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -1530,7 +1530,7 @@ $actual_link = current($actual_link);
 			</div>
 
 			<!-- Modal body -->
-			<div class="modal-body" id="topupcontainer" style="min-height: 550px">
+			<div class="modal-body" id="topupcontainer" style="min-height: 575px">
 
 				<div class="reloadverifying">
 					<img src="img/loading.gif">
@@ -1555,7 +1555,9 @@ $actual_link = current($actual_link);
 								<div>
 									<small>Still couldn't find the SN? <a href="http://bit.ly/FRXSupport" target="_blank">Contact us</a></small>
 								</div>
-								<div class="button next">Proceed</div>
+								<div style="position: relative; height: 50px">
+									<div class="button next">Proceed</div>
+								</div>
 							</fieldset>
 
 							<fieldset class="section">
@@ -1918,10 +1920,20 @@ $('#see_more').click(function(event) {
 })
 
 var button = document.querySelector('.bt-menu-trigger');
-button.addEventListener('click', function (){
+var bar = document.querySelector('.faq_bar');
+
+bar.addEventListener('click', function (){
 	button.classList.toggle('bt-menu-open');
 });
 });
+
+$('#ctopup-container').click( function () {
+	$('#lhc_status_container').hide();
+})
+
+$('.close').click( function () {
+	$('#lhc_status_container').show();
+})
 </script>
 </body>
 
